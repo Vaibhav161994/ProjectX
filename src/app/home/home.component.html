@@ -16,8 +16,8 @@
         <div class="col-4"><i class="fas fa-tachometer-alt"></i></div>
       </div>
       <div class="row">
-          <div class="col-8">Missions</div>
-          <div class="col-4"><i class="fas fa-cogs"></i></div>
+        <div class="col-8"><a [routerLink]="['./missions']">Missions</a></div>
+        <div class="col-4"><a [routerLink]="['./missions']"><i class="fas fa-cogs"></i></a></div>
       </div>
       <div class="row">
           <div class="col-8">Web</div>
@@ -46,6 +46,9 @@
           <i class="fas fa-user my-2 my-sm-0" (click)="ToggleRightSidebar()"></i>
         </div>
     </nav>
+    <div class="main">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
   <ng-sidebar [(opened)]="rightopen" position="right" mode="push" dock=true dockedSize='50px'>

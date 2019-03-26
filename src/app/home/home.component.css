@@ -6,12 +6,19 @@
   width: 160px;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   color: aliceblue;
 }
 div.sidebar div.row {
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 div.row:hover{
+    color: rgb(233, 146, 15);
+}
+div.row a{
+    text-decoration: none;
+    color: aliceblue;
+}
+div.row a:hover{
     color: rgb(233, 146, 15);
 }
