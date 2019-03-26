@@ -1,0 +1,79 @@
+<!-- Container for sidebar(s) + page content -->
+<ng-sidebar-container style="height: 100vh;">
+
+  <!-- A sidebar -->
+  <ng-sidebar [(opened)]="leftopen" mode="push" dock=true dockedSize='50px'>
+    <div class="sidebar">
+      <div class="sidebar_brand">
+        <div class="row">
+          <div class="col-8">ProjectX</div>
+          <div class="col-4"><i class="fab fa-accusoft"></i></div>
+        </div>
+      </div>
+      <hr style="color: aliceblue;">
+      <div class="row">
+        <div class="col-8">DashBoard</div>
+        <div class="col-4"><i class="fas fa-tachometer-alt"></i></div>
+      </div>
+      <div class="row">
+          <div class="col-8">Missions</div>
+          <div class="col-4"><i class="fas fa-cogs"></i></div>
+      </div>
+      <div class="row">
+          <div class="col-8">Web</div>
+          <div class="col-4"><i class="fas fa-globe"></i></div>
+      </div>
+      <div class="row">
+          <div class="col-8">Twitter</div>
+          <div class="col-4"><i class="fab fa-twitter"></i></div>
+      </div>
+    </div>
+  </ng-sidebar>
+
+  <!-- Page content -->
+  <div ng-sidebar-content>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <span><i class="navbar-brand fas fa-bars" (click)="ToggleLeftSidebar()"></i></span>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <i class="fas fa-user my-2 my-sm-0" (click)="ToggleRightSidebar()"></i>
+        </div>
+    </nav>
+  </div>
+
+  <ng-sidebar [(opened)]="rightopen" position="right" mode="push" dock=true dockedSize='50px'>
+      <div class="sidebar">
+        <!-- <div class="sidebar_brand">
+          <div class="row">
+            <div class="col-4"><i class="fas fa-tachometer-alt"></i></div>
+            <div class="col-8">ProjectX1</div>
+          </div>
+        </div>
+        <hr> -->
+        <div class="row">
+          <div class="col-4"><i class="fas fa-user-circle"></i></div>
+          <div class="col-8">Profile</div>
+        </div>
+        <div class="row">
+          <div class="col-4"><i class="fas fa-user-cog"></i></div>  
+          <div class="col-8">Settings</div>
+        </div>
+        <div class="row">
+          <div class="col-4"><i class="far fa-question-circle"></i></div>
+          <div class="col-8">Help</div>
+        </div>
+        <div class="row">
+          <div class="col-4"><i class="fas fa-sign-out-alt"></i></div>
+          <div class="col-8">Logout</div>    
+        </div>
+      </div>
+    </ng-sidebar>
+
+</ng-sidebar-container>

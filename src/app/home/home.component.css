@@ -1,0 +1,17 @@
+.sidebar_brand{
+    color: aliceblue;
+}
+.sidebar{
+  height: 100%;
+  width: 160px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 1rem;
+  color: aliceblue;
+}
+div.sidebar div.row {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+div.row:hover{
+    color: rgb(233, 146, 15);
+}
