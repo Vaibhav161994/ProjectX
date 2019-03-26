@@ -34,24 +34,24 @@
   <div ng-sidebar-content>
     <nav class="navbar navbar-expand-lg bg-secondary">
       <span><i class="navbar-brand fas fa-bars" (click)="ToggleLeftSidebar()"></i></span>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+        <div class="navbar-nav mr-auto">
+          <div class="p-1"><b>Active Mission</b> : <i style="color: rgb(233, 146, 15);"> Xyz Mission</i></div>
+          <div class="logo d-flex flex-row justify-content-end">
+          <div class=""><img src="../../assets/images/Logo_TV_2015.png" style="height: 35px; width: 70px;"></div>
+          <div class=""><img src="../../assets/images/1200px-NASA_logo.png" style="height: 35px; width: 70px;"></div>
+          </div>
+          </div>
         <div class="my-2 my-lg-0">
           <i class="fas fa-user my-2 my-sm-0" (click)="ToggleRightSidebar()"></i>
         </div>
     </nav>
     <div class="main">
       <router-outlet></router-outlet>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </div>
   </div>
 
-  <ng-sidebar [(opened)]="rightopen" position="right" mode="push" dock=true dockedSize='50px'>
+  <ng-sidebar [(opened)]="rightopen" position="right" mode="push" dock=false>
       <div class="sidebar">
         <!-- <div class="sidebar_brand">
           <div class="row">

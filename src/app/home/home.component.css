@@ -22,3 +22,6 @@ div.row a{
 div.row a:hover{
     color: rgb(233, 146, 15);
 }
+div.logo{
+    padding-left: 25rem;
+}
