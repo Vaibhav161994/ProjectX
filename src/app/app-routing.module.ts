@@ -9,6 +9,7 @@ const routes: Routes = [
   {path: '', component: LoginComponent}, 
   { path:'home', component:HomeComponent,
     children:[
+      {path: '',redirectTo: 'dashboard',pathMatch: 'full'},
       { path:'missions', component:MissionComponent},
       { path:'dashboard', component:DashboardComponent}
     ] },
