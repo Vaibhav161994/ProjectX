@@ -1,0 +1,18 @@
+.custom_fields{
+    border-color:#7c0608;
+    text-shadow: 10rem;
+}
+.main_container{
+    height: 100%;
+}
+.login_box{
+    width: 500px;
+    height: 400px;
+    padding-top: 2%;
+    top:50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%, 0);
+    position: absolute;
+    background-image: url('../../assets/images/background.jpg');
+    background-size: 650px 420px;
+}

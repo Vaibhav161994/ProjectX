@@ -6,18 +6,18 @@
     <div class="sidebar">
       <div class="sidebar_brand">
         <div class="row">
-          <div class="col-8">ProjectX</div>
-          <div class="col-4"><i class="fab fa-accusoft"></i></div>
+          <div class="col-8"><a [routerLink]="['./']">ProjectX</a></div>
+          <div class="col-4"><a [routerLink]="['./']"><i class="fab fa-accusoft"></i></a></div>
         </div>
       </div>
       <hr style="color: aliceblue;">
       <div class="row">
-        <div class="col-8">DashBoard</div>
-        <div class="col-4"><i class="fas fa-tachometer-alt"></i></div>
+        <div class="col-8"><a [routerLink]="['dashboard']">DashBoard</a></div>
+        <div class="col-4"><a [routerLink]="['dashboard']"><i class="fas fa-tachometer-alt"></i></a></div>
       </div>
       <div class="row">
-        <div class="col-8"><a [routerLink]="['./missions']">Missions</a></div>
-        <div class="col-4"><a [routerLink]="['./missions']"><i class="fas fa-cogs"></i></a></div>
+        <div class="col-8"><a [routerLink]="['missions']">Missions</a></div>
+        <div class="col-4"><a [routerLink]="['missions']"><i class="fas fa-cogs"></i></a></div>
       </div>
       <div class="row">
           <div class="col-8">Web</div>
@@ -35,9 +35,9 @@
     <nav class="navbar navbar-expand-lg bg-secondary">
       <span><i class="navbar-brand fas fa-bars" (click)="ToggleLeftSidebar()"></i></span>
         <div class="navbar-nav mr-auto">
-          <div class="p-1"><b>Active Mission</b> : <i style="color: rgb(233, 146, 15);"> Xyz Mission</i></div>
+          <div class="align-middle" style="padding-top: 0.5%;"><b>Active Mission</b> : <i style="color: rgb(233, 146, 15);"> Xyz Mission</i></div>
           <div class="logo d-flex flex-row justify-content-end">
-          <div class=""><img src="../../assets/images/Logo_TV_2015.png" style="height: 35px; width: 70px;"></div>
+          <div class="align-middle"><img src="../../assets/images/Logo_TV_2015.png" style="height: 35px; width: 70px;"></div>
           <div class=""><img src="../../assets/images/1200px-NASA_logo.png" style="height: 35px; width: 70px;"></div>
           </div>
           </div>
@@ -47,7 +47,6 @@
     </nav>
     <div class="main">
       <router-outlet></router-outlet>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </div>
   </div>
 

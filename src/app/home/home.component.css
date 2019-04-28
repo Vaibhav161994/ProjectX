@@ -24,4 +24,10 @@ div.row a:hover{
 }
 div.logo{
     padding-left: 25rem;
+    padding-right: -25rem;
+}
+@media only screen and (max-width: 600px) {
+    div.logo{
+        padding-left: 2rem;
+    }
 }
