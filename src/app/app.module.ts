@@ -7,7 +7,7 @@ import { NgxUiLoaderModule, NgxUiLoaderRouterModule, NgxUiLoaderHttpModule } fro
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarModule } from 'ng-sidebar';
-import { MissionComponent } from './mission/mission.component';
+import { MissionComponent } from './home/mission/mission.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './home/dashboard/dashboard.component'
 

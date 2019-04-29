@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { MissionComponent } from './mission/mission.component';
+import { MissionComponent } from './home/mission/mission.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './home/dashboard/dashboard.component';
 
