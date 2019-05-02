@@ -1,26 +1,33 @@
 .sidebar_brand{
     color: aliceblue;
 }
+.navbar{
+    background-color: #2C2D3A;
+}
 .sidebar{
   height: 100%;
   width: 160px;
-  background-color: #111;
+  background-color: #212529;
   overflow-x: hidden;
   padding-top: 0.5rem;
   color: aliceblue;
+  border-right-color: rgb(233, 146, 15);
+  border-right-width: 25px;
 }
-div.sidebar div.row {
-    padding: 0.5rem 1rem 0.5rem 1rem;
+div.sidebar div.row {   
+    padding: 1rem 1rem 0.5rem 1rem;
+    height: 8vh;
+    border-left: 0;
+    border-radius: 23px;
+    box-shadow: 2px;
 }
 div.row:hover{
-    color: rgb(233, 146, 15);
+    background-color: rgb(233, 146, 15);
+    height: 8vh;
 }
 div.row a{
     text-decoration: none;
-    color: aliceblue;
-}
-div.row a:hover{
-    color: rgb(233, 146, 15);
+    color: aliceblue; 
 }
 div.logo{
     padding-left: 25rem;
