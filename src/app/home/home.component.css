@@ -2,12 +2,17 @@
     color: aliceblue;
 }
 .navbar{
-    background-color: #2C2D3A;
+    background: rgb(61, 151, 120);
 }
+
 .sidebar{
   height: 100%;
   width: 160px;
   background-color: #212529;
+  /* background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(to right bottom, #648880, #293f50); */
   overflow-x: hidden;
   padding-top: 0.5rem;
   color: aliceblue;
@@ -22,9 +27,10 @@ div.sidebar div.row {
     box-shadow: 2px;
 }
 div.row:hover{
-    background-color: rgb(233, 146, 15);
+    background: linear-gradient(to left top,#f6f1d3, #648880, #293f50);
     height: 8vh;
 }
+
 div.row a{
     text-decoration: none;
     color: aliceblue; 
